@@ -1,0 +1,55 @@
+
+
+.container{
+    /* background-color: aqua; */
+    border: 2px solid red;
+    padding: 15px;
+    max-width: 300px;
+    height: 300px;
+
+    display: flex;
+    /* Alinhamento Horizontal */
+    justify-content: center;    /* Vai alterar o alinhamento na horizontal */
+    justify-content: space-around;/* Vai gerar espacamento entre os elementos e em volta deles */
+    justify-content: space-between;/* Não adiciona os espacamentos em volta */
+
+    /* Alinhamento Vertical */
+    align-items: center;
+    /* flex-wrap: wrap;  /* Quando a area maxima ser atingida os elementos vão para a linha debaixo */
+    
+}
+
+.item{
+    background-color: #ccc;
+    border: 2px solid blue;
+    height: 50px;
+    width: 50px;
+
+}
+
+.box{
+    background-color: red;
+    border: 2px solid blue;
+    height: 50px;
+    flex-grow: 1;
+    flex-shrink: 1;
+      flex-basis: 30px;  /* Vai dar um ponto de partida para todos os elementos tendo 30px por padrao
+        mas pode alterar em cada elemento, sempre no minimo 30px*/
+/* shortHand para item, define o grow, shrink e o basis */
+flex: 1 1 50px;
+    }
+
+/* #item1{
+    /* Controla a forma que o elemento cresce no meu container */
+    /* flex-grow: 2;
+}
+#item2, #item3{
+    flex-grow: 1;
+} */ */
+
+#item3{
+    /* Controla a forma que o elemento diminui */
+    flex-shrink: 2;
+}
+
+/* order:1 altera a ordem */

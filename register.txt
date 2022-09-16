@@ -1,0 +1,3 @@
+register -> serve para mapear qual campo é qual
+handleSubmit -> quem que vai chamar quando o usuario clicar no botao
+errors -> consegue pegar os erros de cada input
